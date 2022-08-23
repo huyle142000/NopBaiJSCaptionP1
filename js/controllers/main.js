@@ -48,7 +48,7 @@ function getProductList() {
             });
         }
 
-
+        getLocalstorages()
     }).catch(function (err) {
     });
 }
@@ -311,7 +311,7 @@ function showCart(listProducts) {
         numberOfCart += productListAdded[i].quantity
     }
     quantityOfCart.innerHTML = numberOfCart;
-
+    setLocalstorages()
 }
 //Found Product
 function foundProduct() {
@@ -438,12 +438,12 @@ function continueBTN() {
 // LOcalStorage
 function setLocalstorages() {
     localStorage.setItem('ProductCart', JSON.stringify(productListAdded));
-    // console.log(productListAdded)
+    console.log(productListAdded)
 }
 function getLocalstorages() {
     if (localStorage.getItem("ProductCart") != undefined) {
         productListAdded = JSON.parse(localStorage.getItem('ProductCart'));
-        // console.log(productListAdded)
+        console.log(productListAdded)
     }
     showCart(productListAdded)
 }
