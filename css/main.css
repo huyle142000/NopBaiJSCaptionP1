@@ -12,7 +12,7 @@ html, body {
 }
 
 #store {
-  background: linear-gradient(rgb(241, 50, 55), rgb(199, 128, 140));
+  background: linear-gradient(rgb(228, 61, 65), rgb(157, 62, 78), rgb(161, 33, 54));
   width: 100vw;
   display: flex;
   flex-wrap: nowrap;
@@ -314,6 +314,16 @@ html, body {
 }
 .store_product-price .product_quantity i:hover {
   cursor: pointer;
+}
+
+#backHome i {
+  font-size: 20px;
+}
+#backHome p {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+  font-weight: 600;
 }
 
 .store_product-price.show {
