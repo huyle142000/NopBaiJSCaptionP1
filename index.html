@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀi Tập JS Phần 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- main.scss -->
+    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css.map">
+</head>
+
+<body>
+
+    <div id="store_cart">
+        <i id="store_cart-icon" class="fa-solid fa-cart-shopping"></i>
+        <span class="quantityOfCart">0</span>
+    </div>
+    <!-- modal -->
+
+    <div id="store" >
+        <div class="row"class="container" id="store_list-products">
+
+        </div>
+    </div>
+    <!-- modal -->
+    <div id="my_modal">
+        <div class="overlay"></div>
+        <div class="modal_body container">
+            <div class="modal_title">
+                <h2>Cart</h2>
+            </div>
+            <i class="modal_close fa-solid fa-xmark"></i>
+            <div class="modal_content">
+                <table>
+                    <thead></thead>
+                    <tbody class="table_products">
+                        <tr>
+                            <td style="font-size:50px ;">No Product Added</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal_total">
+
+            </div>
+        </div>
+    </div>
+    <!-- Over added popup -->
+    <div id="overAdded">
+        <div class="overlayAdded"></div>
+        <div class="overAdded_body container">
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!--axios  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- product -->
+    <script src="./js/models/product.js"></script>
+    <!-- spPhone -->
+    <script src="./js/services/spPhone.js"></script>
+    <!-- mainjs -->
+    <script src="./js/controllers/main.js"></script>
+</body>
+
+</html>
